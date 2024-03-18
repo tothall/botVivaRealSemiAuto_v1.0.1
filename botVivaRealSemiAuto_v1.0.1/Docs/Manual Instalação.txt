@@ -1,0 +1,15 @@
+1) Instalar o python-3.9.13-amd64.exe, atenção para NÃO selecionar a opção:
+Add Python 3.9 to PATH no início da instalação. No final selecione a opção:
+Disable path length limit
+
+2) Executar com o powershell o arquivo instalador.ps1
+
+3) No diretório raíz botVivaRealSemiAuto_v1.0.1 ir para o seguinte diretório: blablabla\botVivaRealSemiAuto_v1.0.1\Chrome v120.0.6099.225\Chrome\Application.
+   Agora, devemos copiar o path absoluto do arquivo chrome.exe, sendo assim, o seu path absoluto será algo como: 
+   blablabla\botVivaRealSemiAuto_v1.0.1\Chrome v120.0.6099.225\Chrome\Application\chrome.exe
+
+4) Com o path absoluto do chrome.exe devemos ir ao diretório blablabla\botVivaRealSemiAuto_v1.0.1\venv\Lib\site-packages\selenium\webdriver\chromium.
+   Abrir com o editor de texto o arquivo options e logo no começo do arquivo, na linha: "self._binary_location =" devemos colocar o path absoluto do chrome.exe.
+   Portanto a linha deve ficar da seguinte forma:
+
+   self._binary_location = r"blablabla\botVivaRealSemiAuto_v1.0\Chrome v120.0.6099.225\Chrome\Application\chrome.exe"
