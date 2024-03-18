@@ -1,0 +1,8 @@
+1) Instalar o python-3.9.13-amd64.exe, atenção para NÃO selecionar a opção:
+Add Python 3.9 to PATH no início da instalação. No final selecione a opção:
+Disable path length limit
+
+2) Executar com o powershell o arquivo instalador.ps1
+
+3) Copiar o arquivo option.py localizado no diretório raíz botVivaRealSemiAuto_v1.0.1 para \venv\Lib\site-packages\selenium\webdriver\chromium e
+   substituir o arquivo original option.py
